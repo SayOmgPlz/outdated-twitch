@@ -33,6 +33,7 @@ var chatFilter = new function() {
     this.add_to_blacklsit = function(items) {
         items = $.map(items, function(el){return el.toLowerCase()})
         self.blacklist = unique(self.blacklist.concat(items));
+		filterPopup.draw_current_blacklist(self.blacklist);
     }
     
     this.change_filter = function() {
@@ -50,7 +51,6 @@ var filterPopup = new function() {
         
         $("#chat-filter-popup").on("click", "#filter-update-blacklist", function() {
             var items = $("#filter-input-items").val().split(";");
-            self.draw_current_blacklist(items);
             chatFilter.add_to_blacklsit(items);
         });
         
@@ -85,7 +85,7 @@ var filterPopup = new function() {
             appendNewItems += '<li>' + items[i] + '</li>';
         }
             
-        $("#filter-current-blacklist").append(appendNewItems);
+        $("#filter-current-blacklist").html(appendNewItems);
     }
     
     this.show_popup = function() {

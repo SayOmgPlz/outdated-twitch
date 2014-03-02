@@ -46,3 +46,11 @@
 	left  : 300px;
 	overflow   : auto;
 }
+
+#filter-current-blacklist {
+	overflow: hidden;
+}
+
+#filter-input-items {
+	width: 180px;
+}
