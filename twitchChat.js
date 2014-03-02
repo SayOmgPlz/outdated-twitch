@@ -109,7 +109,7 @@ var filterPopup = new function() {
     }
     
     this.style_popup = function() {
-       var styles =  {
+/*        var styles =  {
           "position": "absolute",
           "width": "300px",
           "height": "300px",
@@ -123,10 +123,10 @@ var filterPopup = new function() {
         $("#" + popupId).css(styles);
         
         $("#chat-filter-popup > div").css("margin", "10px");
-        $("#chat-filter-popup label").css("display", "inline");
+        $("#chat-filter-popup label").css("display", "inline"); */
         $("#chat-filter-popup").draggable();
-        $("#filter-update-blacklist").css("float", "right");
-        $("#filter-current-blacklist").children().css({"float" : "left", "margin-right": "17px", "cursor": "pointer"});
+/*         $("#filter-update-blacklist").css("float", "right");
+        $("#filter-current-blacklist").children().css({"float" : "left", "margin-right": "17px", "cursor": "pointer"}); */
     }
     
 }
