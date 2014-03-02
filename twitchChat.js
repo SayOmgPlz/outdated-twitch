@@ -48,13 +48,13 @@ var filterPopup = new function() {
         self.draw_popup(chatFilter.blacklist);
         self.draw_current_blacklist(chatFilter.blacklist);
         
-        $(document).on("click", "#filter-update-blacklist", function() {
+        $("#chat-filter-popup").on("click", "#filter-update-blacklist", function() {
             var items = $("#filter-input-items").val().split(";");
             self.draw_current_blacklist(items);
             chatFilter.add_to_blacklsit(items);
         });
         
-        $(document).on("dblclick", "#filter-current-blacklist > li", function(){
+        $("#chat-filter-popup").on("dblclick", "li", function(){
             chatFilter.remove_from_blacklist($(this).text());
             $(this).remove();
         });
