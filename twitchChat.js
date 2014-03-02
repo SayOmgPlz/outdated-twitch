@@ -65,13 +65,13 @@ var filterPopup = new function() {
             if(popupWindow.hasClass("filter_opened")) {
                 popupWindow.removeClass("filter_opened");
                 popupWindow.addClass("filter_closed");
-                popupWindow.height("50px");
-                popupWindow.css({"top" : 0, "left": 0});
+                //popupWindow.height("28px");
+                //popupWindow.css({"top" : 0, "left": 0});
             } else {
                 popupWindow.removeClass("filter_closed");
                 popupWindow.addClass("filter_opened");
-                popupWindow.css({"top": "300px", "left": "300px"})
-                popupWindow.height("300px");
+                //popupWindow.css({"top": "300px", "left": "300px"})
+                //popupWindow.height("300px");
             }
             
             

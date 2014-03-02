@@ -1,12 +1,7 @@
 #chat-filter-popup {
 	position: absolute;
-	width: 300px;
-	height: 300px;
-	top   : 300px;
-	left  : 300px;
 	z-index: 1000;
 	background : #f5f5f5;
-	overflow   : auto
 }
 
 #chat-filter-popup > div {
@@ -18,11 +13,36 @@
 }
 
 #filter-update-blacklist {
-	float: right:
+	float: right;
 }
 
-#filter-current-blacklist {
+#filter-current-blacklist li {
 	float: left;
 	margin-right: 17px;
 	cursor: pointer;
+}
+
+#chat-filter-popup p {
+	clear: both;
+	margin-top: 12px;
+}
+
+#chat-filter-popup > span {
+	padding: 10px;
+}
+
+.filter_closed {
+	left: 0;
+	top: 0;
+	height: 34px;
+	overflow: hidden;
+	width: 77px;
+}
+
+.filter_opened {
+	width: 350px;
+	height: 300px;
+	top   : 300px;
+	left  : 300px;
+	overflow   : auto;
 }
