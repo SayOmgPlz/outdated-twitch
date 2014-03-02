@@ -1,0 +1,28 @@
+#chat-filter-popup {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top   : 300px;
+	left  : 300px;
+	z-index: 1000;
+	background : #f5f5f5;
+	overflow   : auto
+}
+
+#chat-filter-popup > div {
+	margin: 10px;
+}
+
+#chat-filter-popup label {
+	display: inline;
+}
+
+#filter-update-blacklist {
+	float: right:
+}
+
+#filter-current-blacklist {
+	float: left;
+	margin-right: 17px;
+	cursor: pointer;
+}
