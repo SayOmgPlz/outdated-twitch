@@ -18,7 +18,10 @@ var chatFilter = new function() {
                 return false;
             }
         }
-        
+		
+		if(message.split(" ").length < 2) {
+			return false;
+		}        
         return true;
     }
     
